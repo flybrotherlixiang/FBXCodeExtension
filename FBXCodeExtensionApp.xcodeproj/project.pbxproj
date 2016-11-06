@@ -10,7 +10,35 @@
 		538BEF0B1DCCB231004FC73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BEF0A1DCCB231004FC73C /* AppDelegate.swift */; };
 		538BEF0D1DCCB231004FC73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538BEF0C1DCCB231004FC73C /* Assets.xcassets */; };
 		538BEF101DCCB231004FC73C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538BEF0E1DCCB231004FC73C /* MainMenu.xib */; };
+		538BEF1E1DCCB284004FC73C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538BEF1D1DCCB284004FC73C /* Cocoa.framework */; };
+		538BEF231DCCB284004FC73C /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BEF221DCCB284004FC73C /* SourceEditorExtension.swift */; };
+		538BEF251DCCB284004FC73C /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BEF241DCCB284004FC73C /* SourceEditorCommand.swift */; };
+		538BEF291DCCB284004FC73C /* FBXCodeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 538BEF1B1DCCB284004FC73C /* FBXCodeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		538BEF271DCCB284004FC73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538BEEFF1DCCB231004FC73C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 538BEF1A1DCCB284004FC73C;
+			remoteInfo = FBXCodeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		538BEF2D1DCCB284004FC73C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				538BEF291DCCB284004FC73C /* FBXCodeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		538BEF071DCCB231004FC73C /* FBXCodeExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBXCodeExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +46,12 @@
 		538BEF0C1DCCB231004FC73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538BEF0F1DCCB231004FC73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		538BEF111DCCB231004FC73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538BEF1B1DCCB284004FC73C /* FBXCodeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FBXCodeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		538BEF1D1DCCB284004FC73C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		538BEF211DCCB284004FC73C /* FBXCodeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FBXCodeExtension.entitlements; sourceTree = "<group>"; };
+		538BEF221DCCB284004FC73C /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		538BEF241DCCB284004FC73C /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		538BEF261DCCB284004FC73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		538BEF181DCCB284004FC73C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538BEF1E1DCCB284004FC73C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				538BEF091DCCB231004FC73C /* FBXCodeExtensionApp */,
+				538BEF1F1DCCB284004FC73C /* FBXCodeExtension */,
+				538BEF1C1DCCB284004FC73C /* Frameworks */,
 				538BEF081DCCB231004FC73C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				538BEF071DCCB231004FC73C /* FBXCodeExtensionApp.app */,
+				538BEF1B1DCCB284004FC73C /* FBXCodeExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +103,33 @@
 			path = FBXCodeExtensionApp;
 			sourceTree = "<group>";
 		};
+		538BEF1C1DCCB284004FC73C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538BEF1D1DCCB284004FC73C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		538BEF1F1DCCB284004FC73C /* FBXCodeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				538BEF221DCCB284004FC73C /* SourceEditorExtension.swift */,
+				538BEF241DCCB284004FC73C /* SourceEditorCommand.swift */,
+				538BEF261DCCB284004FC73C /* Info.plist */,
+				538BEF201DCCB284004FC73C /* Supporting Files */,
+			);
+			path = FBXCodeExtension;
+			sourceTree = "<group>";
+		};
+		538BEF201DCCB284004FC73C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				538BEF211DCCB284004FC73C /* FBXCodeExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,15 +140,34 @@
 				538BEF031DCCB231004FC73C /* Sources */,
 				538BEF041DCCB231004FC73C /* Frameworks */,
 				538BEF051DCCB231004FC73C /* Resources */,
+				538BEF2D1DCCB284004FC73C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				538BEF281DCCB284004FC73C /* PBXTargetDependency */,
 			);
 			name = FBXCodeExtensionApp;
 			productName = FBXCodeExtensionApp;
 			productReference = 538BEF071DCCB231004FC73C /* FBXCodeExtensionApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		538BEF1A1DCCB284004FC73C /* FBXCodeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538BEF2A1DCCB284004FC73C /* Build configuration list for PBXNativeTarget "FBXCodeExtension" */;
+			buildPhases = (
+				538BEF171DCCB284004FC73C /* Sources */,
+				538BEF181DCCB284004FC73C /* Frameworks */,
+				538BEF191DCCB284004FC73C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBXCodeExtension;
+			productName = FBXCodeExtension;
+			productReference = 538BEF1B1DCCB284004FC73C /* FBXCodeExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,6 +181,12 @@
 				TargetAttributes = {
 					538BEF061DCCB231004FC73C = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XQ23NX4TN8;
+						ProvisioningStyle = Automatic;
+					};
+					538BEF1A1DCCB284004FC73C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XQ23NX4TN8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -108,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				538BEF061DCCB231004FC73C /* FBXCodeExtensionApp */,
+				538BEF1A1DCCB284004FC73C /* FBXCodeExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		538BEF191DCCB284004FC73C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,7 +238,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		538BEF171DCCB284004FC73C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538BEF231DCCB284004FC73C /* SourceEditorExtension.swift in Sources */,
+				538BEF251DCCB284004FC73C /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		538BEF281DCCB284004FC73C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 538BEF1A1DCCB284004FC73C /* FBXCodeExtension */;
+			targetProxy = 538BEF271DCCB284004FC73C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		538BEF0E1DCCB231004FC73C /* MainMenu.xib */ = {
@@ -240,8 +362,11 @@
 		538BEF151DCCB231004FC73C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQ23NX4TN8;
 				INFOPLIST_FILE = FBXCodeExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp";
@@ -253,12 +378,49 @@
 		538BEF161DCCB231004FC73C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQ23NX4TN8;
 				INFOPLIST_FILE = FBXCodeExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		538BEF2B1DCCB284004FC73C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FBXCodeExtension/FBXCodeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				INFOPLIST_FILE = FBXCodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp.FBXCodeExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		538BEF2C1DCCB284004FC73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FBXCodeExtension/FBXCodeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				INFOPLIST_FILE = FBXCodeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp.FBXCodeExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -280,6 +442,14 @@
 			buildConfigurations = (
 				538BEF151DCCB231004FC73C /* Debug */,
 				538BEF161DCCB231004FC73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		538BEF2A1DCCB284004FC73C /* Build configuration list for PBXNativeTarget "FBXCodeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538BEF2B1DCCB284004FC73C /* Debug */,
+				538BEF2C1DCCB284004FC73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
