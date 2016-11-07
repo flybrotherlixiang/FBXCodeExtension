@@ -23,7 +23,7 @@ class DeleteLines: NSObject, XCSourceEditorCommand {
                 let endingLine = min(selection.end.line, lines.count - 1)
                 let deletionRange = NSRange(location: startingLine, length: endingLine - startingLine + 1)
                 
-                // move selections to the line above the starting line
+                // move [selections] to the line above the starting line before we operate on the [lines] in case it crashes...
                 // note : in case of multi-selections, tweaking the first selection will do the trick
                 if index == 0 {
                     originStartingLine = selection.start.line
@@ -43,20 +43,35 @@ class DeleteLines: NSObject, XCSourceEditorCommand {
                 lines.removeObjects(in: deletionRange)
             }
         }
-        
+
+        // move selections back
         if originStartingLine >= 0 && originStartingColumn >= 0 {
             let firstSelection = selections.firstObject as! XCSourceTextRange
-            var newStart : XCSourceTextPosition
+
+            var newStartingLine, newStartingColumn : Int
             if  originStartingLine >= lines.count - 1 {
-                newStart = XCSourceTextPosition(line: max(lines.count - 1, 0), column: originStartingColumn)
+                newStartingLine = max(lines.count - 1, 0)
             } else {
-                newStart = XCSourceTextPosition(line: originStartingLine, column: originStartingColumn)
+                newStartingLine = originStartingLine
             }
-            
+
+            if lines.count > 0 {
+                let newStartingLineLength = (lines.object(at: newStartingLine) as! NSString).length
+                if originStartingColumn > newStartingLineLength - 1 {
+                    newStartingColumn = newStartingLineLength - 1
+                } else {
+                    newStartingColumn = originStartingColumn
+                }
+            } else {
+                newStartingLine = 0
+                newStartingColumn = 0
+            }
+
+            let newStart = XCSourceTextPosition(line: newStartingLine, column: newStartingColumn)
             firstSelection.start = newStart
             firstSelection.end = newStart
         }
-        
+
         completionHandler(nil)
     }
     
