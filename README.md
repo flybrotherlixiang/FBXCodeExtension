@@ -22,7 +22,7 @@ ___(If you skip this step, you may not be able to see the command or the command
 - And the extension shows up in the gray-version of XCode
 
 <br/>
-![](http://og9en1gou.bkt.clouddn.com/QQ20161107-3@2x.png)
+![](http://og9en1gou.bkt.clouddn.com/QQ20161107-3@2x.png)
 
 <br/>
 
