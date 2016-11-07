@@ -1,8 +1,8 @@
 //
-//  SourceEditorCommand.swift
-//  FBXCodeExtension
+//  DeleteLines.swift
+//  FBXCodeExtensionApp
 //
-//  Created by Xiang Li on 04/11/2016.
+//  Created by 李翔 on 11/7/16.
 //  Copyright © 2016 Xiang Li. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 import XcodeKit
 
 class DeleteLines: NSObject, XCSourceEditorCommand {
-    
+
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         let lines = invocation.buffer.lines
         let selections = invocation.buffer.selections
@@ -22,7 +22,7 @@ class DeleteLines: NSObject, XCSourceEditorCommand {
                 let startingLine = selection.start.line
                 let endingLine = min(selection.end.line, lines.count - 1)
                 let deletionRange = NSRange(location: startingLine, length: endingLine - startingLine + 1)
-                
+
                 // move [selections] to the line above the starting line before we operate on the [lines] in case it crashes...
                 // note : in case of multi-selections, tweaking the first selection will do the trick
                 if index == 0 {
@@ -38,7 +38,7 @@ class DeleteLines: NSObject, XCSourceEditorCommand {
                     selection.start = newStart
                     selection.end = newStart
                 }
-                
+
                 // delete selected lines
                 lines.removeObjects(in: deletionRange)
             }
@@ -71,8 +71,9 @@ class DeleteLines: NSObject, XCSourceEditorCommand {
             firstSelection.start = newStart
             firstSelection.end = newStart
         }
-
+        
         completionHandler(nil)
     }
     
 }
+
