@@ -35,3 +35,6 @@ ___(If you skip this step, you may not be able to see the command or the command
 - Make sure it's opened in your Settings -> Extensions ->XCode Source Editor
 
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-7@2x.png)
+
+## License
+FBXCodeExtension is released under the MIT license. See LICENSE for details.
