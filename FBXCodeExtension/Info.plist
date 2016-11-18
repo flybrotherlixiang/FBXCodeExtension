@@ -44,6 +44,22 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Duplicate Lines</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).InsertNewLineBelow</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).InsertNewLineBelow</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Insert New Line Below</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).InsertNewLineAbove</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).InsertNewLineAbove</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Insert New Line Above</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

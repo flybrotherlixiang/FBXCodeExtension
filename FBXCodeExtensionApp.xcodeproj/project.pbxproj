@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534D975F1DDE9A8D00D54BFA /* InsertNewLineBelow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D975E1DDE9A8D00D54BFA /* InsertNewLineBelow.swift */; };
+		534D97611DDE9E9000D54BFA /* InsertNewLineAbove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D97601DDE9E9000D54BFA /* InsertNewLineAbove.swift */; };
 		538BEF0B1DCCB231004FC73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BEF0A1DCCB231004FC73C /* AppDelegate.swift */; };
 		538BEF0D1DCCB231004FC73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538BEF0C1DCCB231004FC73C /* Assets.xcassets */; };
 		538BEF101DCCB231004FC73C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538BEF0E1DCCB231004FC73C /* MainMenu.xib */; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		534D975E1DDE9A8D00D54BFA /* InsertNewLineBelow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNewLineBelow.swift; sourceTree = "<group>"; };
+		534D97601DDE9E9000D54BFA /* InsertNewLineAbove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNewLineAbove.swift; sourceTree = "<group>"; };
 		538BEF071DCCB231004FC73C /* FBXCodeExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBXCodeExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538BEF0A1DCCB231004FC73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538BEF0C1DCCB231004FC73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				538BEF221DCCB284004FC73C /* SourceEditorExtension.swift */,
 				53CDD7B01DD047FF00286D56 /* DeleteLines.swift */,
 				53CDD7AE1DD047C400286D56 /* DuplicateLines.swift */,
+				534D975E1DDE9A8D00D54BFA /* InsertNewLineBelow.swift */,
+				534D97601DDE9E9000D54BFA /* InsertNewLineAbove.swift */,
 				538BEF261DCCB284004FC73C /* Info.plist */,
 				538BEF201DCCB284004FC73C /* Supporting Files */,
 			);
@@ -184,12 +190,12 @@
 				TargetAttributes = {
 					538BEF061DCCB231004FC73C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XQ23NX4TN8;
+						DevelopmentTeam = L5B4TBT7H9;
 						ProvisioningStyle = Automatic;
 					};
 					538BEF1A1DCCB284004FC73C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XQ23NX4TN8;
+						DevelopmentTeam = L5B4TBT7H9;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -249,6 +255,8 @@
 				538BEF231DCCB284004FC73C /* SourceEditorExtension.swift in Sources */,
 				53CDD7AF1DD047C400286D56 /* DuplicateLines.swift in Sources */,
 				53CDD7B11DD047FF00286D56 /* DeleteLines.swift in Sources */,
+				534D97611DDE9E9000D54BFA /* InsertNewLineAbove.swift in Sources */,
+				534D975F1DDE9A8D00D54BFA /* InsertNewLineBelow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				DEVELOPMENT_TEAM = L5B4TBT7H9;
 				INFOPLIST_FILE = FBXCodeExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp";
@@ -387,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				DEVELOPMENT_TEAM = L5B4TBT7H9;
 				INFOPLIST_FILE = FBXCodeExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FB-Corp..FBXCodeExtensionApp";
@@ -403,7 +411,7 @@
 				CODE_SIGN_ENTITLEMENTS = FBXCodeExtension/FBXCodeExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				DEVELOPMENT_TEAM = L5B4TBT7H9;
 				INFOPLIST_FILE = FBXCodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -422,7 +430,7 @@
 				CODE_SIGN_ENTITLEMENTS = FBXCodeExtension/FBXCodeExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = XQ23NX4TN8;
+				DEVELOPMENT_TEAM = L5B4TBT7H9;
 				INFOPLIST_FILE = FBXCodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
