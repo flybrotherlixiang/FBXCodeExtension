@@ -4,7 +4,10 @@
 ![](http://og9en1gou.bkt.clouddn.com/1.gif)
 ## Duplicate Lines
 ![](http://og9en1gou.bkt.clouddn.com/2.gif)
-
+## Inset New Line Above
+![](http://og9en1gou.bkt.clouddn.com/3.gif)
+## Inset New Line Below
+![](http://og9en1gou.bkt.clouddn.com/4.gif)
 
 ## Requirements
 - XCode >= 8.0
