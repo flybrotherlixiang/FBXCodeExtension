@@ -1,5 +1,7 @@
 # FBXCodeExtension
 
+[![GitHub release](https://img.shields.io/github/release/flybrotherlixiang/FBXCodeExtension.svg)](https://github.com/flybrotherlixiang/FBXCodeExtension/releases)
+
 ## Delete Lines
 ![](http://og9en1gou.bkt.clouddn.com/1.gif)
 ## Duplicate Lines
