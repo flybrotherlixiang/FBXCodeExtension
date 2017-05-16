@@ -23,10 +23,13 @@ git clone https://github.com/flybrotherlixiang/FBXCodeExtension.git
 - Code signing 
 ___(If you skip this step, you may not be able to see the command or the command may gray out)___
 - Run FBXCodeExtension target
+
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-1@2x.png)
+
 - And the extension shows up in the gray-version of XCode
 
 <br/>
+
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-3@2x.png)
 
 <br/>
