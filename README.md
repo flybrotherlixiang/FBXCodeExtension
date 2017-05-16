@@ -39,6 +39,7 @@ ___(If you skip this step, you may not be able to see the command or the command
 - Open FBXCodeExtensionApp.app under Products and quit both version of XCode
 
 <br/>
+
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-5@2x.png)
 
 - Make sure it's opened in your Settings -> Extensions ->XCode Source Editor
