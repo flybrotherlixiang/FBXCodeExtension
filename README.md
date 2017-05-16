@@ -34,6 +34,7 @@ ___(If you skip this step, you may not be able to see the command or the command
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-2@2x.png)
 
 - Open FBXCodeExtensionApp.app under Products and quit both version of XCode
+
 <br/>
 ![](http://og9en1gou.bkt.clouddn.com/QQ20161107-5@2x.png)
 
